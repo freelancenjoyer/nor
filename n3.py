@@ -2,9 +2,9 @@
 from nornir import InitNornir
 from nornir_netmiko.tasks import netmiko_send_command
 from nornir_utils.plugins.functions import print_result
+from collections import OrderedDict
 import keyring
 import csv
-from collections import OrderedDict
 
 pw = keyring.get_password('ssh', 'username')
 
