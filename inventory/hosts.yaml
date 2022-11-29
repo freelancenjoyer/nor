@@ -1,0 +1,26 @@
+# hosts.yaml
+---
+R1:
+   hostname: 192.168.152.11
+   groups:
+        - ios
+R2:
+   hostname: 192.168.152.12
+   groups:
+        - ios
+R3:
+   hostname: 192.168.152.13
+   groups:
+        - ios
+S1:
+   hostname: 192.168.152.21
+   groups:
+        - ios
+S2:
+   hostname: 192.168.152.22
+   groups:
+        - ios
+S3:
+   hostname: 192.168.152.23
+   groups:
+        - ios
