@@ -6,11 +6,11 @@ from mac_vendor_lookup import MacLookup
 import keyring
 import csv
 
-pw = keyring.get_password('ssh', 'peps')
+pw = keyring.get_password('ssh', 'username')
 
 nr = InitNornir(config_file="config.yaml")
 
-nr.inventory.defaults.username = "peps"
+nr.inventory.defaults.username = "username"
 nr.inventory.defaults.password = pw
 
 result = nr.run(task=netmiko_send_command, command_string="show mac address-table", use_textfsm=True)
