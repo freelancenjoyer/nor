@@ -1,0 +1,7 @@
+!
+{% for i in host["access_ports"] %}
+interface {{i['interface']}}
+bandwidth 5000
+!
+{% endfor %}
+!
